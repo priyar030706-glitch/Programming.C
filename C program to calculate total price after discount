@@ -1,0 +1,9 @@
+/* Write a C program to calculate total price after discount */
+#include <stdio.h>
+int main() {
+    float price, discount;
+    printf("Enter price and discount percentage: ");
+    scanf("%f %f", &price, &discount);
+    printf("Final Price = %.2f", price - (price * discount / 100));
+    return 0;
+}
