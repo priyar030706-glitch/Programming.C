@@ -1,0 +1,8 @@
+/* Write a C program to calculate electricity bill based on units consumed */
+#include <stdio.h>
+int main() {
+    int units = 100;
+    float bill = units * 5;
+    printf("Electricity Bill = %.2f", bill);
+    return 0;
+}
