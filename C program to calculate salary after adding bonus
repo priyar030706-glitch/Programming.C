@@ -1,0 +1,9 @@
+/* Write a C program to calculate salary after adding bonus*/
+#include <stdio.h>
+int main() {
+    float salary, bonus;
+    printf("Enter salary and bonus: ");
+    scanf("%f %f", &salary, &bonus);
+    printf("Total Salary = %.2f", salary + bonus);
+    return 0;
+}
