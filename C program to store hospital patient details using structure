@@ -1,0 +1,14 @@
+/* Write a C program to store hospital patient details using structure */
+#include <stdio.h>
+struct Patient {
+    char name[20];
+    int age;
+    int id;
+};
+
+int main() {
+    struct Patient p;
+    scanf("%s %d %d", p.name, &p.age, &p.id);
+    printf("Name: %s\nAge: %d\nPatient ID: %d", p.name, p.age, p.id);
+    return 0;
+}
