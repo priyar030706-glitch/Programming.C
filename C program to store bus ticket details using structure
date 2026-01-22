@@ -1,0 +1,14 @@
+/* Write a C program to store bus ticket details using structure */
+#include <stdio.h>
+struct Ticket {
+    char name[20];
+    int seat;
+    float fare;
+};
+
+int main() {
+    struct Ticket t;
+    scanf("%s %d %f", t.name, &t.seat, &t.fare);
+    printf("Name: %s\nSeat: %d\nFare: %.2f", t.name, t.seat, t.fare);
+    return 0;
+}
