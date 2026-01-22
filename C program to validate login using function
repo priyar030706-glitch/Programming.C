@@ -1,0 +1,15 @@
+/* Write a C program to validate login using function */
+#include <stdio.h>
+#include <string.h>
+
+int validate(char user[], char pass[]) {
+    return (strcmp(user,"admin")==0 && strcmp(pass,"123")==0);
+}
+
+int main() {
+    char u[20], p[20];
+    scanf("%s %s", u, p);
+    if(validate(u,p)) printf("Login Successful");
+    else printf("Login Failed");
+    return 0;
+}
