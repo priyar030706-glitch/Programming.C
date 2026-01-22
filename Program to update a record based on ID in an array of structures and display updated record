@@ -1,0 +1,25 @@
+/* Program to update a record based on ID in an array of structures and display updated record */
+#include <stdio.h>
+struct Item { int id; char name[20]; };
+int main() {
+    struct Item i[3];
+    for(int j=0;j<3;j++) scanf("%d %s",&i[j].id,i[j].name);
+    int sid; char newName[20]; 
+    scanf("%d %s",&sid,newName);
+    for(int j=0;j<3;j++)
+        if(i[j].id==sid) strcpy(i[j].name,newName);
+    for(int j=0;j<3;j++)
+        printf("ID:%d Name:%s\n",i[j].id,i[j].name);
+    return 0;
+}
+
+/* Input:
+101 Pen
+102 Book
+103 Bag
+102 Notebook
+Output:
+ID:101 Name:Pen
+ID:102 Name:Notebook
+ID:103 Name:Bag
+*/
