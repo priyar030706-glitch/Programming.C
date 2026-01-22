@@ -1,0 +1,10 @@
+/* Write a C program to print attendance numbers of students */
+#include <stdio.h>
+int main() {
+    int n, i;
+    printf("Enter number of students: ");
+    scanf("%d", &n);
+    for (i = 1; i <= n; i++)
+        printf("%d ", i);
+    return 0;
+}
