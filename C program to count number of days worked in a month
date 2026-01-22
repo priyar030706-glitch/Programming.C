@@ -1,0 +1,9 @@
+/* Write a C program to count number of days worked in a month */
+#include <stdio.h>
+int main() {
+    int days;
+    printf("Enter number of days worked: ");
+    scanf("%d", &days);
+    printf("Total Days Worked = %d", days);
+    return 0;
+}
