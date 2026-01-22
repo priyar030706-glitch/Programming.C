@@ -1,0 +1,13 @@
+/* Write a C program to calculate total weekly sales */
+#include <stdio.h>
+int main() {
+    int i;
+    float sales[7], total = 0;
+    printf("Enter sales for 7 days:\n");
+    for(i = 0; i < 7; i++) {
+        scanf("%f", &sales[i]);
+        total += sales[i];
+    }
+    printf("Total Weekly Sales = %.2f", total);
+    return 0;
+}
