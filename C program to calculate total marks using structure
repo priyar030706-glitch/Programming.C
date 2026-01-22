@@ -1,0 +1,12 @@
+/* Write a C program to calculate total marks using structure */
+#include <stdio.h>
+struct Marks {
+    int m1, m2, m3;
+};
+
+int main() {
+    struct Marks s;
+    scanf("%d %d %d", &s.m1, &s.m2, &s.m3);
+    printf("Total Marks = %d", s.m1+s.m2+s.m3);
+    return 0;
+}
