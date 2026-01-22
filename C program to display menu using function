@@ -1,0 +1,11 @@
+/* Write a C program to display menu using function */
+#include <stdio.h>
+
+void menu() {
+    printf("1. Rice\n2. Milk\n3. Oil\n");
+}
+
+int main() {
+    menu();
+    return 0;
+}
