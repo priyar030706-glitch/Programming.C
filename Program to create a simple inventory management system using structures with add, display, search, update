@@ -1,0 +1,45 @@
+/* Program to create a simple inventory management system using structures with add, display, search, update */
+#include <stdio.h>
+#include <string.h>
+struct Item { int id; char name[20]; int qty; };
+int main() {
+    struct Item inv[5];
+    int n=0; // current items
+    // Add 3 items
+    for(int i=0;i<3;i++){
+        scanf("%d %s %d",&inv[i].id,inv[i].name,&inv[i].qty);
+        n++;
+    }
+    // Display
+    printf("Inventory:\n");
+    for(int i=0;i<n;i++) printf("ID:%d Name:%s Qty:%d\n",inv[i].id,inv[i].name,inv[i].qty);
+    // Search ID
+    int sid; scanf("%d",&sid);
+    for(int i=0;i<n;i++)
+        if(inv[i].id==sid) printf("Found: ID:%d Name:%s Qty:%d\n",inv[i].id,inv[i].name,inv[i].qty);
+    // Update
+    int newQty; scanf("%d %d",&sid,&newQty);
+    for(int i=0;i<n;i++)
+        if(inv[i].id==sid) inv[i].qty=newQty;
+    printf("Updated Inventory:\n");
+    for(int i=0;i<n;i++) printf("ID:%d Name:%s Qty:%d\n",inv[i].id,inv[i].name,inv[i].qty);
+    return 0;
+}
+
+/* Input:
+101 Pen 50
+102 Book 30
+103 Bag 20
+102
+103 25
+Output:
+Inventory:
+ID:101 Name:Pen Qty:50
+ID:102 Name:Book Qty:30
+ID:103 Name:Bag Qty:20
+Found: ID:102 Name:Book Qty:30
+Updated Inventory:
+ID:101 Name:Pen Qty:50
+ID:102 Name:Book Qty:30
+ID:103 Name:Bag Qty:25
+*/
