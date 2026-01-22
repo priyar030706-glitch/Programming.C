@@ -1,0 +1,14 @@
+/* Write a C program to manage bank account details using structure */
+#include <stdio.h>
+struct Bank {
+    char name[20];
+    int acc_no;
+    float balance;
+};
+
+int main() {
+    struct Bank b;
+    scanf("%s %d %f", b.name, &b.acc_no, &b.balance);
+    printf("Name: %s\nAccount No: %d\nBalance: %.2f", b.name, b.acc_no, b.balance);
+    return 0;
+}
