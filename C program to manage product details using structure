@@ -1,0 +1,14 @@
+/* Write a C program to manage product details using structure */
+#include <stdio.h>
+struct Product {
+    char name[20];
+    int code;
+    float price;
+};
+
+int main() {
+    struct Product p;
+    scanf("%s %d %f", p.name, &p.code, &p.price);
+    printf("Name: %s\nCode: %d\nPrice: %.2f", p.name, p.code, p.price);
+    return 0;
+}
