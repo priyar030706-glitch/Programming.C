@@ -1,0 +1,14 @@
+/* Write a C program to store library book details using structure */
+#include <stdio.h>
+struct Book {
+    char title[30];
+    char author[20];
+    int pages;
+};
+
+int main() {
+    struct Book b;
+    scanf("%s %s %d", b.title, b.author, &b.pages);
+    printf("Title: %s\nAuthor: %s\nPages: %d", b.title, b.author, b.pages);
+    return 0;
+}
