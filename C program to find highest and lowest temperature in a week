@@ -1,0 +1,16 @@
+/* Write a C program to find highest and lowest temperature in a week */
+#include <stdio.h>
+int main() {
+    int i;
+    float temp[7], max, min;
+    printf("Enter temperatures for 7 days:\n");
+    for(i = 0; i < 7; i++)
+        scanf("%f", &temp[i]);
+    max = min = temp[0];
+    for(i = 1; i < 7; i++) {
+        if(temp[i] > max) max = temp[i];
+        if(temp[i] < min) min = temp[i];
+    }
+    printf("Highest = %.1f\nLowest = %.1f", max, min);
+    return 0;
+}
