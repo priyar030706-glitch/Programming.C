@@ -1,0 +1,21 @@
+/* Program to store details of multiple books and display all book details */
+#include <stdio.h>
+struct Book { int id; char title[20]; float price; };
+int main() {
+    struct Book b[3];
+    for(int i=0;i<3;i++)
+        scanf("%d %s %f", &b[i].id, b[i].title, &b[i].price);
+    for(int i=0;i<3;i++)
+        printf("ID:%d Title:%s Price:%.2f\n", b[i].id, b[i].title, b[i].price);
+    return 0;
+}
+
+/* Input:
+101 C 250
+102 Java 300
+103 Python 200
+Output:
+ID:101 Title:C Price:250.00
+ID:102 Title:Java Price:300.00
+ID:103 Title:Python Price:200.00
+*/
