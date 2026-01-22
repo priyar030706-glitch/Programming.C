@@ -1,0 +1,13 @@
+/* Write a C program to calculate average rainfall */
+#include <stdio.h>
+int main() {
+    int i;
+    float rain[7], sum = 0;
+    printf("Enter rainfall for 7 days:\n");
+    for(i = 0; i < 7; i++) {
+        scanf("%f", &rain[i]);
+        sum += rain[i];
+    }
+    printf("Average Rainfall = %.2f", sum / 7);
+    return 0;
+}
