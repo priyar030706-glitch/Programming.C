@@ -1,0 +1,10 @@
+/* Write a C program to print salary slips for employees */
+#include <stdio.h>
+int main() {
+    float basic, hra, da, total;
+    printf("Enter basic salary, HRA and DA: ");
+    scanf("%f %f %f", &basic, &hra, &da);
+    total = basic + hra + da;
+    printf("Total Salary = %.2f", total);
+    return 0;
+}
