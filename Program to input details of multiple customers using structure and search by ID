@@ -1,0 +1,22 @@
+/* Program to input details of multiple customers using structure and search by ID */
+#include <stdio.h>
+struct Customer { int id; char name[20]; char mob[15]; };
+int main() {
+    struct Customer c[3];
+    for(int i=0;i<3;i++)
+        scanf("%d %s %s",&c[i].id,c[i].name,c[i].mob);
+    int sid; scanf("%d",&sid);
+    for(int i=0;i<3;i++)
+        if(c[i].id==sid)
+            printf("ID:%d Name:%s Mobile:%s\n",c[i].id,c[i].name,c[i].mob);
+    return 0;
+}
+
+/* Input:
+101 John 9876543210
+102 Alice 9876501234
+103 Bob 9876512345
+102
+Output:
+ID:102 Name:Alice Mobile:9876501234
+*/
