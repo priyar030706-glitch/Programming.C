@@ -1,0 +1,14 @@
+/* Write a C program to store course details using structure */
+#include <stdio.h>
+struct Course {
+    char name[20];
+    int code;
+    int duration; // months
+};
+
+int main() {
+    struct Course c;
+    scanf("%s %d %d", c.name, &c.code, &c.duration);
+    printf("Course: %s\nCode: %d\nDuration: %d months", c.name, c.code, c.duration);
+    return 0;
+}
