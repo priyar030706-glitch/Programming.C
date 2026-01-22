@@ -1,0 +1,13 @@
+/* Write a C program to select menu items using switch case */
+#include <stdio.h>
+int main() {
+    int choice;
+    printf("1.Tea  2.Coffee\nEnter choice: ");
+    scanf("%d", &choice);
+    switch (choice) {
+        case 1: printf("Tea Selected"); break;
+        case 2: printf("Coffee Selected"); break;
+        default: printf("Invalid Choice");
+    }
+    return 0;
+}
