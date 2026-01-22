@@ -1,0 +1,15 @@
+/* Write a C program to count number of present students */
+#include <stdio.h>
+int main() {
+    int n, i, status, count = 0;
+    printf("Enter number of students: ");
+    scanf("%d", &n);
+    printf("Enter 1 for present, 0 for absent:\n");
+    for(i = 0; i < n; i++) {
+        scanf("%d", &status);
+        if(status == 1)
+            count++;
+    }
+    printf("Present Students = %d", count);
+    return 0;
+}
