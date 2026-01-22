@@ -1,0 +1,10 @@
+/* Write a C program to generate monthly savings report */
+#include <stdio.h>
+int main() {
+    float income, expense, savings;
+    printf("Enter monthly income and expense: ");
+    scanf("%f %f", &income, &expense);
+    savings = income - expense;
+    printf("Monthly Savings = %.2f", savings);
+    return 0;
+}
