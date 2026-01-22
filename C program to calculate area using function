@@ -1,0 +1,13 @@
+/* Write a C program to calculate area using function */
+#include <stdio.h>
+
+float area(float r) {
+    return 3.14*r*r;
+}
+
+int main() {
+    float r;
+    scanf("%f", &r);
+    printf("Area = %.2f", area(r));
+    return 0;
+}
