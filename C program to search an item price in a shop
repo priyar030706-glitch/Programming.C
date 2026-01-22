@@ -1,0 +1,20 @@
+/* Write a C program to search an item price in a shop */
+#include <stdio.h>
+int main() {
+    int i, n;
+    float price[20], key;
+    printf("Enter number of items: ");
+    scanf("%d", &n);
+    for(i = 0; i < n; i++)
+        scanf("%f", &price[i]);
+    printf("Enter price to search: ");
+    scanf("%f", &key);
+    for(i = 0; i < n; i++) {
+        if(price[i] == key) {
+            printf("Price Found");
+            return 0;
+        }
+    }
+    printf("Price Not Found");
+    return 0;
+}
